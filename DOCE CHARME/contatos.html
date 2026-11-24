@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contatos | Doce Charme</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contatos.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+
+  <div id="navbar"></div>
+  <script src="navbar.js"></script>
+  <section class="contatos" id="contatos">
+    <div class="contatos__intro">
+
+      <img src="logo-doce-charme.jpeg" alt="Imagem de uma caixa de presente com doces" class="contatos__imagem">
+      <h2>Vamos adoçar o seu dia?</h2>
+      <p>Encomende bolos, doces para festas e caixas de presente. Conte o que você imagina e a gente responde rapidinho.</p>
+
+      <ul class="contatos__lista">
+        <li>
+          <strong>WhatsApp</strong>
+          <a href="https://wa.me/5511999999999">+55 11 94767-8787</a>
+        </li>
+        <li>
+          <strong>E-mail</strong>
+          <a href="mailto:ola@docecharme.com.br">ola@docecharme.com.br</a>
+        </li>
+        <li>
+          <strong>Instagram</strong>
+          <a href="https://www.instagram.com/doce.__charme/" target="_blank" rel="noopener">doce.__charme</a>
+        </li>
+        <li>
+          <strong>Endereço</strong>
+          <span>Rua Domingos Rosalia 220- jardim São Jorge<br>São Paulo, SP</span>
+        </li>
+        <li>
+          <strong>Horário</strong>
+          <span>Seg a sáb, das 9h às 18h<br>Encomendas com 3 dias de antecedência</span>
+        </li>
+      </ul>
+    </div>
+
+    <form class="contatos__form" action="#" method="post">
+      <h3>Envie sua mensagem</h3>
+
+      <label for="nome">Seu nome</label>
+      <input type="text" id="nome" name="nome" placeholder="Nome completo" required>
+
+      <label for="whatsapp">WhatsApp</label>
+      <input type="tel" id="whatsapp" name="whatsapp" placeholder="(11) 99999-9999" required>
+
+      <label for="assunto">Sobre o que você quer falar?</label>
+      <select id="assunto" name="assunto">
+       
+        <option>Doces para festa</option>
+       
+      </select>
+
+      <label for="mensagem">Mensagem</label>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte a data, o número de pessoas e o sabor que você quer."></textarea>
+
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+
+</body>
+</html>
